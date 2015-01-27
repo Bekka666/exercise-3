@@ -107,14 +107,20 @@ header {
   position: absolute;
   top: 0.5em; }
 
-/* line 47, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+/* line 46, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+.close-btn, ul {
+  background-color: #1e7145;
+  padding: 1em 0;
+  margin: 0; }
+
+/* line 51, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
 .navigation {
   margin: 0;
   padding: 0; }
-  /* line 49, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+  /* line 53, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
   .navigation li {
     list-style-type: none; }
-    /* line 51, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+    /* line 55, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
     .navigation li a {
       display: block;
       padding: 0.5em 1em;
@@ -122,27 +128,27 @@ header {
       text-decoration: none;
       color: #1d1d1d;
       overflow: auto; }
-    /* line 59, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+    /* line 63, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
     .navigation li a:hover {
       color: #00a300;
       transition: all 500ms ease-in-out; }
-    /* line 63, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+    /* line 67, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
     .navigation lifirst-child a {
       border-top: 1px solid #00a300; }
 
-/* line 68, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+/* line 72, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
 .toggle-btn, .close-btn {
   color: #1d1d1d;
   height: 40px;
   width: 40px; }
-  /* line 72, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+  /* line 76, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
   .toggle-btn i, .close-btn i {
     padding: 0.5em; }
-  /* line 76, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
-  .toggle-btn .toggle-btn, .toggle-btn .close-btn:hover, .close-btn .toggle-btn, .close-btn .close-btn:hover {
-    background-color: #00a300;
+  /* line 79, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+  .toggle-btn i:hover, .close-btn i:hover {
+    color: #00a300;
     transition: all 500ms ease-in-out; }
-  /* line 80, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+  /* line 83, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
   .toggle-btn span, .close-btn span {
     text-indent: 100%;
     white-space: nowrap;
@@ -150,13 +156,13 @@ header {
     display: block; }
 
 @media only screen and (max-width: 60em) {
-  /* line 86, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+  /* line 89, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
   .site-wrapper {
     position: relative;
     overflow: hidden;
     width: 100%;
     z-index: 100; }
-    /* line 91, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+    /* line 94, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
     .site-wrapper .sliding-canvas {
       width: 100%;
       height: 100%;
@@ -165,16 +171,16 @@ header {
           -ms-transform: translateX(0);
               transform: translateX(0);
       transition: all 500ms ease-in-out; }
-    /* line 100, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+    /* line 103, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
     .site-wrapper[data-state="slide-open"] .sliding-canvas {
       -webkit-transform: translateX(-100%);
           -ms-transform: translateX(-100%);
               transform: translateX(-100%); }
-    /* line 104, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+    /* line 107, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
     .site-wrapper[data-state="slide-open"] {
       overflow: visible; }
 
-  /* line 110, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+  /* line 113, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
   .slide-menu {
     position: absolute;
     width: 100%;
@@ -186,16 +192,21 @@ header {
  }
 
 @media only screen and (min-width: 60em) {
-  /* line 123, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+  /* line 126, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
   .toggle-btn, .close-btn {
     display: none; }
 
-  /* line 126, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+  /* line 129, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
   .slide-menu {
     position: static;
     text-align: center; }
 
-  /* line 130, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+  /* line 133, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
   h1 {
     text-align: center; }
+
+  /* line 136, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-3/scss/components/main */
+  .navigation li {
+    text-align: center;
+    display: inline-block; }
  }
