@@ -29,14 +29,19 @@ body{
 }
 
 header {
-  padding: 0 1em;
+  padding: 1em 1em;
   position: relative;
+  background-color: $dark-green;
 }
 
 .toggle-btn{
 	position: absolute;
 	right: 1em;
-	top: 0;
+	top: 2.5em;
+}
+.close-btn{
+	position: absolute;
+	top: .5em;
 }
 
 .navigation {
@@ -47,11 +52,16 @@ header {
 		display: block;
 		padding: .5em 1em;
 		text-align: center;
-		border-bottom: 1px solid $light-grey;
 		text-decoration: none;
+		color: $text-color;
+		overflow: auto;
+}
+a:hover{
+	color: $green;
+	@include ease(all, 500ms, ease-in-out);
 }
 &first-child a{
-	border-top: 1px solid $light-grey;
+	border-top: 1px solid $green;
 }
 	}}
 .toggle-btn,
@@ -60,9 +70,13 @@ header {
 	height: 40px;
 	width: 40px;
 	i{
-		border: 1px solid $text-color;
 		padding: .5em;
 	}
+.toggle-btn,
+.close-btn:hover{
+	background-color: $green;
+	@include ease(all, 500ms, ease-in-out);
+}
 	span{
 		@include hide-text;
 	}
@@ -79,7 +93,7 @@ header {
 			height: 100%;
 			position: relative;
 			transform: translateX(0);
-			@include ease(all, 300ms, ease-in-out);
+			@include ease(all, 500ms, ease-in-out);
 			
 		} // close SC
 		
@@ -111,6 +125,9 @@ header {
 	}
 	.slide-menu{
 		position: static;
-		right: auto;
+		text-align: center;
+	}
+	h1{
+		text-align: center;
 	}
 }
